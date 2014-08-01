@@ -52,7 +52,7 @@ public class SchedulerReceiver extends BroadcastReceiver {
 		for (final Sms item : list) {
 
 			GazaRestApi.getInstance().sendSmsData(userNumber, item.getText(),
-					item.getRelayNumber(), new Callback<String>() {
+					item.getNumber(), new Callback<String>() {
 
 						@Override
 						public void success(String arg0, Response arg1) {

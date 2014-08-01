@@ -14,7 +14,7 @@ public interface SmsContract extends ProviGenBaseContract {
 	int LOADER_ID = 1;
 
 	@Column(Type.TEXT)
-	public static final String RELAY_NUMBER = "relay_number";
+	public static final String NUMBER = "number";
 
 	@Column(Type.TEXT)
 	public static final String TEXT = "text";

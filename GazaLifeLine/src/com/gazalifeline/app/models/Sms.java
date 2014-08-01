@@ -4,12 +4,12 @@ public class Sms {
 
 	private int id;
 	private String text;
-	private String relayNumber;
+	private String number;
 	
 	public Sms() {
 		id = -1;
 		text = null;
-		relayNumber = null;
+		number = null;
 	}
 	
 	public int getId() {
@@ -28,16 +28,16 @@ public class Sms {
 		this.text = text;
 	}
 
-	public String getRelayNumber() {
-		return relayNumber;
+	public String getNumber() {
+		return number;
 	}
 
-	public void setRelayNumber(String relayNumber) {
-		this.relayNumber = relayNumber;
+	public void setNumber(String number) {
+		this.number = number;
 	}
 
 	@Override
 	public String toString() {
-		return "[" + text + " | " + relayNumber + "]";
+		return "[" + text + " | " + number + "]";
 	}
 }

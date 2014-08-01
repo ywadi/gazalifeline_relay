@@ -33,7 +33,7 @@ public class SmsParser {
 					SmsMessage currentMessage = SmsMessage
 							.createFromPdu((byte[]) pdusObj[i]);
 
-					sms.setRelayNumber(currentMessage.getDisplayOriginatingAddress());
+					sms.setNumber(currentMessage.getDisplayOriginatingAddress());
 					sms.setText(currentMessage.getDisplayMessageBody());
 
 					smsList.add(sms);

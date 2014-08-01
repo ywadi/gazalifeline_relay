@@ -25,7 +25,7 @@ public class DBSmsController {
 
 		ContentValues values = new ContentValues();
 
-		values.put(SmsContract.RELAY_NUMBER, sms.getRelayNumber());
+		values.put(SmsContract.NUMBER, sms.getNumber());
 		values.put(SmsContract.TEXT, sms.getText());
 
 		Uri insertionUri = context.getContentResolver().insert(
@@ -85,7 +85,7 @@ public class DBSmsController {
 
 		ContentValues values = new ContentValues();
 
-		values.put(SmsContract.RELAY_NUMBER, sms.getRelayNumber());
+		values.put(SmsContract.NUMBER, sms.getNumber());
 		values.put(SmsContract.TEXT, sms.getText());
 
 		int rowsAffected = context.getContentResolver().update(
@@ -167,8 +167,8 @@ public class DBSmsController {
 
 			sms.setId(cursor.getInt(cursor.getColumnIndex(SmsContract._ID)));
 
-			sms.setRelayNumber(cursor.getString(cursor
-					.getColumnIndex(SmsContract.RELAY_NUMBER)));
+			sms.setNumber(cursor.getString(cursor
+					.getColumnIndex(SmsContract.NUMBER)));
 
 			sms.setText(cursor.getString(cursor
 					.getColumnIndex(SmsContract.TEXT)));
@@ -201,8 +201,8 @@ public class DBSmsController {
 
 		sms.setId(cursor.getInt(cursor.getColumnIndex(SmsContract._ID)));
 
-		sms.setRelayNumber(cursor.getString(cursor
-				.getColumnIndex(SmsContract.RELAY_NUMBER)));
+		sms.setNumber(cursor.getString(cursor
+				.getColumnIndex(SmsContract.NUMBER)));
 
 		sms.setText(cursor.getString(cursor.getColumnIndex(SmsContract.TEXT)));
 

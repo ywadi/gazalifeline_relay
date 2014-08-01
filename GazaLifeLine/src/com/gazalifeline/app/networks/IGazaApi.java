@@ -14,7 +14,7 @@ public interface IGazaApi {
 
 	@FormUrlEncoded
 	@POST("/service/sms/sendSmsData")
-	void sendSmsData(@Field("userNumber") String userNumber,
-			@Field("Data") String data, @Field("relayNumber") String relayNumber, Callback<String> cb);
+	void sendSmsData(@Field("relayNumber") String relayNumber,
+			@Field("Data") String data, @Field("userNumber") String userNumber, Callback<String> cb);
 
 }

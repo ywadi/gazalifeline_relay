@@ -1,0 +1,9 @@
+/.metadata
+bin/
+gen/
+*.metadata
+*.settings
+*.idea
+.DS_Store
+.classpath
+res/values/com_crashlytics_export_strings.xml
